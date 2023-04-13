@@ -1,0 +1,48 @@
+.box{
+    width: 300px;
+    height: 300px;
+}
+
+.box1 {
+    margin-left: 20px;
+    background-color: black;
+    
+}
+
+.box2 {
+   padding-left: 20px;
+    background-color: #066873;
+}
+
+.box3{
+    border: 20px;
+    background-color:brown;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    display:flex;
+    justify-content:space-around;
+}
+
+
+.container2{
+    width: 800px;
+    height: 500px;
+    display: flex;
+    background-color:black;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+}
+
+.ul{
+   background-color: lightgray;
+}
+.li{
+    text-align: center;
+    font-size: x-large;
+}

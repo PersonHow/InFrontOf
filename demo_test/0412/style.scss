@@ -1,0 +1,215 @@
+body{
+    padding: 0 16px;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+// 顏色變數
+$primary-color:#E49E9E;
+
+.container{
+    header{
+        width: 100%;
+        height: 100px;
+        justify-content: space-between;
+        display: flex;
+        margin-top: 30px;
+        align-items: center;
+        
+        .Text{
+            width: 70px;
+            height: 70px;
+            background-color: chocolate;
+        }
+
+        .img{
+            width: 30px;
+            height: 5px;
+            background-color:#444;
+            border-radius: 15px;
+            position: relative;
+
+            // 子層
+            &::before, &::after{
+                content: "";
+                width: 30px;
+                height: 5px;
+                background-color: #444;
+                border-radius: 15px; 
+                position: absolute;
+            }
+
+            &::before{
+                top: 10px;
+            }
+
+            &::after{
+                top: -10px;
+            }
+        }
+    }
+
+    .area1{
+        display: flex;
+        margin-top: 32px;
+        justify-content: space-around;
+
+        .text-area{
+            margin-right: 5%;
+            width: 30%;
+            h1{
+                text-align: center;
+            }
+        }
+
+        .banner{
+            width: 30%;
+        }
+
+
+    }
+
+    .area2{
+        margin-top: 32px;
+
+        .title{
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .card-area{
+            display: flex;
+            justify-content: space-between;
+
+            .card{
+                width: 30%;
+                height: 400px;
+
+                //"潮"狀
+                background: {
+                    size: cover;
+                    repeat: no-repeat;
+                    color: white;
+                    position: center center;
+                    
+                }
+
+                .btn{
+                    width: 20%;
+                    padding: 8px 12px;
+                    background-color:#E49E9E;
+                    text-align: center;
+                    margin: 330px auto;
+                    color: white;
+                
+                }
+            }
+
+            .card1{
+                background-image: url(./Rectangle\ 3.png);
+            }
+
+            .card2{
+                background-image: url(./Rectangle\ 3\ \(1\).png);
+            }
+
+            .card3{
+                background-image: url(./Rectangle\ 3\ \(2\).png);
+            }
+        }
+    }
+
+    .area3{
+        border-top:  5px solid cadetblue;
+        margin-top: 32px;
+        
+        h2{
+            text-align: center;
+            font-size: 50px;
+        }
+        .card-area{
+            display: flex;
+            justify-content: space-between;
+        
+            .card{
+                width : 30%;
+                height: auto;
+                background-color: white;
+
+                img{
+                    width: 100%;
+                }
+
+                p{
+                    font-size: 20px;
+                    margin: 0 12px;
+                }
+
+                .btn{
+                    width: 30%;
+                    padding: 6px 10px;
+                    background-color:$primary-color;
+                    text-align: center;
+                    margin: 30px auto;
+                    color: white;
+                }
+            }
+        }
+
+        .btn-primary{
+            width: 10%;
+            padding: 6px 10px;
+            background-color:coral;
+            text-align: center;
+            margin: 40px auto;
+            color:white;
+        }
+    }
+
+    .area4{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        img{
+            width: 60%;
+        }
+
+        .text-area3{
+            margin-left: 32px;
+            background-color:#E49E9E ;
+            color:white;
+            padding: 0 16px;
+
+            h3{
+                font-size: 30pt;
+            }
+
+            p{
+                font-size: 20pt;
+            }
+        }
+
+        .bg{
+        background-color: $primary-color;
+        width:40%;
+        height: 630px;
+        z-index: -1;
+        position: absolute;
+        top: -45px;
+        left:-80px;
+        }
+    }
+
+    footer{
+            margin-top: 120px;
+            width: 100%;
+            background-color: coral;
+            padding: 10px;
+
+            p{
+                text-align: center;
+            }
+            
+    }
+}

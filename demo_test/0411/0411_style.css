@@ -1,0 +1,14 @@
+.text .title{
+    font-size: larger;
+}
+
+.img{
+    width: 500px;
+    height: 700px;
+    background-image: url(https://gss0.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/zhidao/wh%3D600%2C800/sign=f22dd3ab723e6709be554df90bf7b305/7dd98d1001e939017494a2b276ec54e737d196a3.jpg);
+    background-repeat: no-repeat;
+    border: 3px solid lightskyblue;
+    background-size: cover;
+    background-position: 0% 100%;
+    
+}
